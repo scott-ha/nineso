@@ -6,7 +6,6 @@ const testJSON = require('./test.json');
 // single product list, product id
 var spl, cid;
 
-// /product/:cid
 // URL param : req.params.name
 // Query param : req.query.name
 
@@ -16,7 +15,6 @@ router.get('/:cid', function(req, res, next) {
   cid = req.params.cid
   session = req.session.logined;
   console.log(session);
-
   // need to be modified
   if (cid.length == 3) {
     res.render('product/product-medium', {
@@ -34,11 +32,11 @@ router.get('/:cid', function(req, res, next) {
 // /product/:cid/detail?pid=&o_url=
 // url+query params /:cid/detail?pid
 router.get('/:cid/detail', function(req, res, next) {
-  console.log('===================');
+  console.log('======== /product/:cid/detail?pid=&o_url ==========');
   console.log('category id : ', req.params.cid);
   console.log('product id : ', req.query.pid);
   console.log('original url : ', req.query.o_url);
-  console.log('===================');
+  console.log('==================================================');
   session = req.session.logined;
   o_url = req.query.o_url;
   res.render('product/product-detail', {

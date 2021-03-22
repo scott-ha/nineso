@@ -5,21 +5,24 @@ const req_modules = require('./req_modules');
 const testJSON = require('./test.json');
 const request = require('request');
 const API_rcmd = require('./rcmd.js');
+const cs = require('./cs.js');
 
 // single product list,
 // 1:bed, 2:living, 3:storage
-var spl_1, spl_2, spl_3, session, res_data, a;
+var spl_1, spl_2, spl_3, session, res_data, c_id, cs_data;
 
 // initial root
 router.get('/', async function(req, res, next) {
 
   console.log('---------------------------');
-  // console.log(req.cookies);
-  console.log(req.session.logined);
+  cs_data = await cs.cs_check(req);
+  console.log(cs_data);
   console.log('---------------------------');
-  // spl = testJSON;
   session = req.session.logined;
   console.log(session);
+  // 추후 사용
+  // c_id = req.cookies.connect.sid;
+  // console.log(c_id);
 
   spl_1 = await API_rcmd.rcmd_1();
   spl_2 = await API_rcmd.rcmd_2();
