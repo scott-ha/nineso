@@ -15,7 +15,7 @@
     </div>
   </div>
   <div class="col-md-12 text-right mb-4">
-    <a href="/product/1" class="text-bold">침실가구 더보기 →</a>
+    <a href="/product/101" class="text-bold">침실가구 더보기 →</a>
   </div>
 
   <% for(var i = 0; i < 8; i++){ %>
@@ -23,7 +23,7 @@
     <!-- Single Prodect -->
     <div class="product">
       <div class="thumb">
-        <a href="/product_detail" class="image">
+        <a href="/product/<%= spl_1[i].cate_id %>/detail?pid=<%= spl_1[i].id %>&o_url=http://item.gmarket.co.kr/Item?goodscode=1488433464" class="image">
           <img src="<%= spl_1[i].img_url %>" alt="Product" />
           <img class="hover-image" src="<%= spl_1[i].img_url %>" alt="Product" />
         </a>
@@ -33,7 +33,6 @@
       </div>
       <div class="content">
         <h5 class="title"><%= spl_1[i].seller_nm %></h5>
-        <!-- <a href="#"></a> -->
         <h5 class="name"><%= spl_1[i].prd_nm %></h5>
         <span class="price">
           <span class="new"><%= spl_1[i].sales_price %>원</span>

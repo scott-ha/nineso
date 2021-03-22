@@ -11,7 +11,7 @@ const API_rcmd = require('./rcmd.js');
 var spl_1, spl_2, spl_3, session, res_data, a;
 
 // initial root
-router.get('/', function(req, res, next) {
+router.get('/', async function(req, res, next) {
 
   console.log('---------------------------');
   // console.log(req.cookies);
@@ -21,11 +21,11 @@ router.get('/', function(req, res, next) {
   session = req.session.logined;
   console.log(session);
 
-  spl_1 = API_rcmd.rcmd_1();
-  spl_2 = API_rcmd.rcmd_2();
-  spl_3 = API_rcmd.rcmd_3();
+  spl_1 = await API_rcmd.rcmd_1();
+  spl_2 = await API_rcmd.rcmd_2();
+  spl_3 = await API_rcmd.rcmd_3();
 
-  res.render('index', {
+  await res.render('index', {
     spl_1: spl_1,
     spl_2: spl_2,
     spl_3: spl_3,
