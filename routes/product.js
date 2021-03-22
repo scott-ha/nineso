@@ -17,11 +17,17 @@ router.get('/:id', function(req, res, next) {
   pi = req.params.id
   console.log(pi);
   console.log(pi.length);
+  session = req.session.logined;
+  console.log(session);
 
   if (pi.length == 3) {
-    res.render('product/product-medium', { spl: spl });
+    res.render('product/product-medium', {
+      session: session
+    });
   } else if (pi.length == 5) {
-    res.render('product/product-small');
+    res.render('product/product-small', {
+      session: session
+    });
   } else {
     res.redirect('/');
   }
@@ -29,7 +35,7 @@ router.get('/:id', function(req, res, next) {
 });
 
 // product/small
-router.get('/small', function (req, res, next) {
+router.get('/small', function(req, res, next) {
   res.render('product/product-small');
 })
 
