@@ -19,28 +19,28 @@
   </div>
 
   <% for(var i = 0; i < 8; i++){ %>
-    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6" data-aos="fade-up" data-aos-delay="200">
-      <!-- Single Prodect -->
-      <div class="product">
-        <div class="thumb">
-          <a href="/product_detail" class="image">
-            <img src="<%= spl[i].img_url%>" alt="Product" />
-            <img class="hover-image" src="<%= spl[i].img_url%>" alt="Product" />
-          </a>
-          <div class="actions">
-            <a href="#" class="action wishlist" title="Wishlist"><i class="icon-heart"></i></a>
-          </div>
-        </div>
-        <div class="content">
-          <h5 class="title"><%= spl[i].seller_nm%></h5>
-          <!-- <a href="#"></a> -->
-          <h5 class="name"><%= spl[i].prd_nm%></h5>
-          <span class="price">
-            <span class="new">456,000</span>
-          </span>
+  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6" data-aos="fade-up" data-aos-delay="200">
+    <!-- Single Prodect -->
+    <div class="product">
+      <div class="thumb">
+        <a href="/product_detail" class="image">
+          <img src="<%= spl_1[i].img_url %>" alt="Product" />
+          <img class="hover-image" src="<%= spl_1[i].img_url %>" alt="Product" />
+        </a>
+        <div class="actions">
+          <a href="#" class="action wishlist" title="Wishlist"><i class="icon-heart"></i></a>
         </div>
       </div>
+      <div class="content">
+        <h5 class="title"><%= spl_1[i].seller_nm %></h5>
+        <!-- <a href="#"></a> -->
+        <h5 class="name"><%= spl_1[i].prd_nm %></h5>
+        <span class="price">
+          <span class="new"><%= spl_1[i].sales_price %>원</span>
+        </span>
+      </div>
     </div>
-<% } %>
+  </div>
+  <% } %>
 
 </div>

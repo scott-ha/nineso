@@ -1,65 +1,77 @@
-[{
-    "id": 10000023,
-    "cate_id": 10101,
-    "cate_nm": "일반침대",
-    "img_url": "http://gdimg.gmarket.co.kr/1795086877/still/300",
-    "prd_nm": "라피네 싱글 철제침대 / 블랙 / 화이트 / 철제프레임",
-    "seller_nm": "gmarket"
-  },
-  {
-    "id": 10000023,
-    "cate_id": 10101,
-    "cate_nm": "일반침대",
-    "img_url": "http://gdimg.gmarket.co.kr/1795086877/still/300",
-    "prd_nm": "라피네 싱글 철제침대 / 블랙 / 화이트 / 철제프레임",
-    "seller_nm": "gmarket"
-  },
-  {
-    "id": 10000023,
-    "cate_id": 10101,
-    "cate_nm": "일반침대",
-    "img_url": "http://gdimg.gmarket.co.kr/1795086877/still/300",
-    "prd_nm": "라피네 싱글 철제침대 / 블랙 / 화이트 / 철제프레임",
-    "seller_nm": "gmarket"
-  },
-  {
-    "id": 10000023,
-    "cate_id": 10101,
-    "cate_nm": "일반침대",
-    "img_url": "http://gdimg.gmarket.co.kr/1795086877/still/300",
-    "prd_nm": "라피네 싱글 철제침대 / 블랙 / 화이트 / 철제프레임",
-    "seller_nm": "gmarket"
-  },
-  {
-    "id": 10000023,
-    "cate_id": 10101,
-    "cate_nm": "일반침대",
-    "img_url": "http://gdimg.gmarket.co.kr/1795086877/still/300",
-    "prd_nm": "라피네 싱글 철제침대 / 블랙 / 화이트 / 철제프레임",
-    "seller_nm": "gmarket"
-  },
-  {
-    "id": 10000023,
-    "cate_id": 10101,
-    "cate_nm": "일반침대",
-    "img_url": "http://gdimg.gmarket.co.kr/1795086877/still/300",
-    "prd_nm": "라피네 싱글 철제침대 / 블랙 / 화이트 / 철제프레임",
-    "seller_nm": "gmarket"
-  },
-  {
-    "id": 10000023,
-    "cate_id": 10101,
-    "cate_nm": "일반침대",
-    "img_url": "http://gdimg.gmarket.co.kr/1795086877/still/300",
-    "prd_nm": "라피네 싱글 철제침대 / 블랙 / 화이트 / 철제프레임",
-    "seller_nm": "gmarket"
-  },
-  {
-    "id": 10000023,
-    "cate_id": 10101,
-    "cate_nm": "일반침대",
-    "img_url": "http://gdimg.gmarket.co.kr/1795086877/still/300",
-    "prd_nm": "라피네 싱글 철제침대 / 블랙 / 화이트 / 철제프레임",
-    "seller_nm": "gmarket"
-  }
-]
+{
+    "data": [
+        {
+            "cate_id": 10101,
+            "cate_nm": "일반침대",
+            "id": 10000001,
+            "img_url": "http://gdimg.gmarket.co.kr/1795086877/still/300",
+            "prd_nm": "라피네 싱글 철제침대/블랙/화이트/철제프레임",
+            "sales_price": 84000,
+            "seller_nm": "G Market"
+        },
+        {
+            "cate_id": 10101,
+            "cate_nm": "일반침대",
+            "id": 10000002,
+            "img_url": "http://gdimg.gmarket.co.kr/1708014730/still/300",
+            "prd_nm": "트리샤 침대 프레임 (SS/화이트)",
+            "sales_price": 134400,
+            "seller_nm": "G Market"
+        },
+        {
+            "cate_id": 10101,
+            "cate_nm": "일반침대",
+            "id": 10000003,
+            "img_url": "http://gdimg.gmarket.co.kr/1625387634/still/300",
+            "prd_nm": "스칸딕 로맨틱 퀸 원목침대 프레임",
+            "sales_price": 269000,
+            "seller_nm": "G Market"
+        },
+        {
+            "cate_id": 10101,
+            "cate_nm": "일반침대",
+            "id": 10000004,
+            "img_url": "http://gdimg.gmarket.co.kr/1939200775/still/300",
+            "prd_nm": "에몬스홈 밀레 호텔 평상형 침대",
+            "sales_price": 695770,
+            "seller_nm": "G Market"
+        },
+        {
+            "cate_id": 10101,
+            "cate_nm": "일반침대",
+            "id": 10000005,
+            "img_url": "http://gdimg.gmarket.co.kr/1564682920/still/300",
+            "prd_nm": "베디스 프리미엄 침대 프레임(헤드+깔판)_퀸 SB257",
+            "sales_price": 352470,
+            "seller_nm": "G Market"
+        },
+        {
+            "cate_id": 10101,
+            "cate_nm": "일반침대",
+            "id": 10000006,
+            "img_url": "http://gdimg.gmarket.co.kr/1278850790/still/300",
+            "prd_nm": "동서가구 알폰스 오가닉 7존 투매트리스 퀸침대 DF905088",
+            "sales_price": 321900,
+            "seller_nm": "G Market"
+        },
+        {
+            "cate_id": 10101,
+            "cate_nm": "일반침대",
+            "id": 10000007,
+            "img_url": "http://gdimg.gmarket.co.kr/1718766024/still/300",
+            "prd_nm": "루나)침대GSS(매트제외)",
+            "sales_price": 621000,
+            "seller_nm": "GMarket"
+        },
+        {
+            "cate_id": 10101,
+            "cate_nm": "일반침대",
+            "id": 10000008,
+            "img_url": "http://gdimg.gmarket.co.kr/1471231707/still/300",
+            "prd_nm": "폴리아 원목 침대 슈퍼싱글침대 퀸침대 침대프레임",
+            "sales_price": 304000,
+            "seller_nm": "GMarket"
+        }
+    ],
+    "status": 200
+}
