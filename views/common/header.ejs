@@ -1,0 +1,117 @@
+<div class="header section">
+  <!-- Mobile START -->
+  <div class="header-bottom d-lg-none sticky-nav">
+    <div class="container position-relative">
+      <div class="row align-self-center">
+        <!-- Header Logo Start -->
+        <div class="col-auto align-self-center">
+          <div class="header-logo">
+            <a href="/"><img src="/assets/images/logo/logo.png" alt="Site Logo" /></a>
+          </div>
+        </div>
+        <!-- Header Logo End -->
+
+        <!-- Header Action Start -->
+        <div class="col align-self-center">
+          <div class="header-actions">
+            <div class="header_account_list">
+              <a href="javascript:void(0)" class="header-action-btn search-btn"><i class="icon-magnifier"></i></a>
+              <div class="dropdown_search">
+                <form class="action-form" action="#">
+                  <input class="form-control" placeholder="나인소 통합검색" type="text">
+                  <button class="submit" type="submit"><i class="icon-magnifier"></i></button>
+                </form>
+              </div>
+            </div>
+            <!-- Single Wedge Start -->
+            <div class="header-bottom-set dropdown">
+              <button class="dropdown-toggle header-action-btn" data-bs-toggle="dropdown"><i class="icon-user"></i></button>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a class="dropdown-item" href="#">회원정보변경</a></li>
+                <li><a class="dropdown-item" href="/contact">최근 본 상품</a></li>
+                <li><a class="dropdown-item" href="#">FAQ</a></li>
+                <li><a class="dropdown-item" href="#">공지사항</a></li>
+                <li><a class="dropdown-item" href="#">로그아웃</a></li>
+              </ul>
+            </div>
+            <!-- Single Wedge End -->
+            <a href="#offcanvas-cart" class="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
+              <i class="icon-handbag"></i>
+              <span class="header-action-num">01</span>
+            </a>
+            <a href="#offcanvas-mobile-menu" class="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
+              <i class="icon-menu"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Header Action End -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile END -->
+
+  <!-- Header Bottom  End -->
+  <!-- Main Menu Start -->
+  <div class="bg-white d-none d-lg-block sticky-nav">
+    <div class="container position-relative">
+      <div class="row">
+        <div class="col-auto align-self-center">
+          <div class="header-logo">
+            <a href="/"><img src="/assets/images/logo/logo.png" alt="Site Logo" /></a>
+          </div>
+        </div>
+        <div class="col-auto align-self-center">
+          <div class="main-menu">
+            <ul>
+              <li class="dropdown position-static"><a href="#">침실가구</a>
+                <%include ./nav-list-bed %>
+              </li>
+              <li class="dropdown position-static"><a href="#">거실가구</a>
+                <%include ./nav-list-living %>
+              </li>
+              <li class="dropdown position-static"><a href="#">수납가구</a>
+                <%include ./nav-list-storage %>
+              </li>
+              <li>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-5 align-self-center">
+          <form class="action-form" action="#">
+            <input class="form-control" placeholder="나인소 통합검색" type="text">
+            <button class="submit" type="submit"><i class="icon-magnifier"></i></button>
+          </form>
+        </div>
+        <div class="col align-self-center">
+          <div class="header-actions">
+            <!-- Single Wedge Start -->
+            <div class="header-bottom-set dropdown">
+              <% if(!session) {%>
+              <a href="/users/login"><button class="dropdown-toggle header-action-btn"><span class="custom-icon-profile"></span></button></a>
+              <% } else if(session) {%>
+              <button class="dropdown-toggle header-action-btn" data-bs-toggle="dropdown"><span class="custom-icon-profile"></span></button>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a class="dropdown-item" href="#">회원정보변경</a></li>
+                <li><a class="dropdown-item" href="/contact">최근 본 상품</a></li>
+                <li><a class="dropdown-item" href="#">FAQ</a></li>
+                <li><a class="dropdown-item" href="#">공지사항</a></li>
+                <li><a class="dropdown-item" href="#">로그아웃</a></li>
+              </ul>
+              <% } %>
+            </div>
+            <!-- Single Wedge End -->
+            <a href="#offcanvas-cart" class="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
+              <span class="custom-icon-storage mr-2"></span><span class="header-text">나인소 보관함</span>
+            </a>
+            <a href="#offcanvas-mobile-menu" class="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
+              <i class="icon-menu"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main Menu End -->
+</div>
