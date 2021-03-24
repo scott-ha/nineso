@@ -13934,7 +13934,7 @@ body.offcanvas-open {
 }
 @media only screen and (max-width: 575px) {
   .slider-height {
-    height: 750px;
+    height: 530px;
   }
 }
 @media only screen and (max-width: 368px) {
