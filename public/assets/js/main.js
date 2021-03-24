@@ -2,7 +2,7 @@
     "use strict";
 
     /*----------------------------------------
-            Bootstrap dropdown               
+            Bootstrap dropdown
     -------------------------------------------*/
 
     // Add slideDown animation to Bootstrap dropdown when expanding.
@@ -37,7 +37,7 @@
     });
 
     /*---------------------------
-          Nice Select 
+          Nice Select
        ------------------------------ */
 
     $('select.shop-sort').niceSelect();
@@ -287,7 +287,7 @@
     });
 
     /*---------------------------
-        Quick view Slider 
+        Quick view Slider
     ------------------------------ */
     var galleryThumb = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
@@ -309,7 +309,7 @@
     });
 
     /*---------------------------
-        Product Details Slider 
+        Product Details Slider
     ------------------------------ */
     var zoomThumb = new Swiper('.zoom-thumbs', {
         spaceBetween: 10,
@@ -330,7 +330,7 @@
     });
 
     /*---------------------------
-        Product Details Slider 
+        Product Details Slider
     ------------------------------ */
     var zoomThumb = new Swiper('.zoom-thumbs-2', {
         spaceBetween: 0,
@@ -436,7 +436,7 @@
     $.scrollUp({
         scrollText: '<i class="ion-android-arrow-up"></i>',
         easingType: "linear",
-        scrollSpeed: 900,
+        scrollSpeed: 150,
         animation: "fade",
     });
     /*---------------------
@@ -451,7 +451,7 @@
     });
 
     /*-----------------------------
-        Blog Gallery Slider 
+        Blog Gallery Slider
     -------------------------------- */
     var swiper = new Swiper(".blog-post-media", {
         slidesPerView: 1,

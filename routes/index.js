@@ -20,9 +20,7 @@ router.get('/', async function(req, res, next) {
   console.log('---------------------------');
   session = req.session.logined;
   console.log(session);
-  // 추후 사용
-  // c_id = req.cookies.connect.sid;
-  // console.log(c_id);
+
 
   spl_1 = await API_rcmd.rcmd_1();
   spl_2 = await API_rcmd.rcmd_2();

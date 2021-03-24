@@ -19,16 +19,15 @@
   </div>
 
   <% for(var i = 0; i < 8; i++){ %>
-  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6" data-aos="fade-up" data-aos-delay="200">
+  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6 pr-1 pl-2 " data-aos="fade-up" data-aos-delay="200">
     <!-- Single Prodect -->
     <div class="product">
       <div class="thumb">
         <a href="/product/<%= spl_1[i].cate_id %>/detail?pid=<%= spl_1[i].id %>&o_url=<%= spl_1[i].org_url%>" class="image">
           <img src="<%= spl_1[i].img_url %>" alt="Product" />
-          <img class="hover-image" src="<%= spl_1[i].img_url %>" alt="Product" />
         </a>
         <div class="actions">
-          <a href="#" class="action wishlist" title="Wishlist"><i class="icon-heart"></i></a>
+          <a href="/" class="action wishlist" title="Wishlist"><i class="icon-heart"></i></a>
         </div>
       </div>
       <div class="content">

@@ -17420,7 +17420,7 @@ body.offcanvas-open {
   z-index: 10;
   display: flex;
   flex-direction: column;
-  padding: 20px 15px 0;
+  padding: 8px 12px 0;
   transition: all 0.3s ease 0s;
   text-align: left;
   background-color: #FFF;
@@ -17472,6 +17472,8 @@ body.offcanvas-open {
 .product .content .btn {
   align-self: center;
 }
+
+/* Need Customizing
 .product:hover .thumb .image img {
   transform: scale(1.1) rotate(3deg);
 }
@@ -17496,7 +17498,7 @@ body.offcanvas-open {
 }
 .product:hover .content .title a:hover {
   color: #03c04a;
-}
+} */
 
 .tab-content .tab-pane {
   display: block;

@@ -6,6 +6,7 @@ exports.cs_check = function(req) {
   return new Promise(function(resolve, reject) {
     c = req.cookies;
     s = req.session;
+
     result = {c,s};
     resolve(result);
   });
