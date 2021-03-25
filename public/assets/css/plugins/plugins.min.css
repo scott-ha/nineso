@@ -6105,14 +6105,16 @@ a.ui-button:active {
     transition: all .2s
 }
 
-.nice-select .option.focus,
-.nice-select .option.selected.focus,
+/* .nice-select .option.selected.focus, */
+
+/* .nice-select .option.focus, */
 .nice-select .option:hover {
-    background-color: #f6f6f6
+    background-color: #d5d5d5;
 }
 
 .nice-select .option.selected {
-    font-weight: 700
+    font-weight: 700;
+    background-color: rgba(3, 192, 74, 0.1);
 }
 
 .nice-select .option.disabled {
