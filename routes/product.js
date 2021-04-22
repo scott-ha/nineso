@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const API_rcmd = require('./rcmd.js');
 
 const testJSON = require('./test.json');
 
@@ -10,7 +11,7 @@ var spl, cid;
 // Query param : req.query.name
 
 // /product/:cid
-router.get('/:cid', function(req, res, next) {
+router.get('/:cid', async function(req, res, next) {
   // pruduct category id | To medium/small
   cid = req.params.cid
   session = req.session.logined;
@@ -21,8 +22,10 @@ router.get('/:cid', function(req, res, next) {
       session: session
     });
   } else if (cid.length == 5) {
+    spl = await API_rcmd.prds_10101();
     res.render('product/product-small', {
-      session: session
+      session: session,
+      spl: spl
     });
   } else {
     res.redirect('/');

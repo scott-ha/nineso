@@ -66,6 +66,25 @@ exports.rcmd_3 = function() {
       });
   });
 }
+exports.prds_10101 = function() {
+  return new Promise(function(resolve, reject) {
+    request.get(req_modules.req_get('/api/prds/10101'),
+      function(error, response, body) {
+        if (error) {
+          reject(error);
+        } else {
+          res_data = JSON.parse(body);
+          res_data = res_data.data;
+
+          // price formatting
+          for (var i = 0; i < res_data.length; i++) {
+            res_data[i].sales_price = res_data[i].sales_price.format();
+          }
+          resolve(res_data)
+        }
+      });
+  });
+}
 
 
 // price formatting

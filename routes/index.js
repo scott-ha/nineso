@@ -21,7 +21,6 @@ router.get('/', async function(req, res, next) {
   session = req.session.logined;
   console.log(session);
 
-
   spl_1 = await API_rcmd.rcmd_1();
   spl_2 = await API_rcmd.rcmd_2();
   spl_3 = await API_rcmd.rcmd_3();
