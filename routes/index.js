@@ -26,7 +26,7 @@ router.get('/', async function(req, res, next) {
   spl_2 = await API_rcmd.rcmd_2();
   spl_3 = await API_rcmd.rcmd_3();
 
-  await res.render('index', {
+  res.render('index', {
     spl_1: spl_1,
     spl_2: spl_2,
     spl_3: spl_3,
